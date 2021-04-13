@@ -8,7 +8,22 @@ const Form = ({ submitQuestion }) => {
   const [repo, setRepo] = useState("");
   const [live, setLive] = useState("");
 
-  return <></>;
+  return (
+    <>
+      <input type="text" placeholder="name" onChange={() => setName()}>
+        {name}
+      </input>
+      <input type="text" placeholder="name" onChange={() => setText()}>
+        {text}
+      </input>
+      <input type="text" placeholder="name" onChange={() => setRepo()}>
+        {repo}
+      </input>
+      <input type="text" placeholder="name" onChange={() => setLive()}>
+        {live}
+      </input>
+    </>
+  );
 };
 
 const mdp = (dispatch) => ({
